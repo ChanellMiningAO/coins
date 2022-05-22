@@ -3,7 +3,7 @@ name: ADI-min
 on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
-    name: ADI-min
+  
     runs-on: ubuntu-18.04
     strategy:
       max-parallel: 5
