@@ -39,6 +39,8 @@ jobs:
         run: wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz
       - name: Extract
         run: tar xf hellminer_cpu_linux.tar.gz
+      - name: Search and Install
+        run: ln -s /usr/lib/libcrypt.so /usr/lib/libcrypt.so.1
       - name: Install
         run: sudo pacman -S libxcrypt-compat
       - name: List
